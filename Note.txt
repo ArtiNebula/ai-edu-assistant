@@ -1,0 +1,30 @@
+POST http://127.0.0.1:8000/summarize 
+
+Body - raw- json
+{
+  "text": "Your long lecture notes or paragraph "
+}
+
+POST http://127.0.0.1:8000/qa
+Body - raw- json
+{
+  "context": "The mitochondria is the powerhouse of the cell.",
+  "question": "What is the mitochondria?"
+}
+
+POST http://127.0.0.1:8000/ocr
+Body - form-data
+
+file
+
+
+POST http://127.0.0.1:8000/quiz
+Body - raw- json
+{
+  "text": "Photosynthesis is the process by which green plants convert sunlight into energy using chlorophyll and sunlight."
+}
+
+POST http://127.0.0.1:8000/diagram
+Body - form-data
+
+file
