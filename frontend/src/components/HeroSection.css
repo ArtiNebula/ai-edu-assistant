@@ -1,0 +1,82 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full browser height */
+  background: #f8f9fa;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 90%;
+}
+
+.text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #6c757d;
+}
+
+.signup-box {
+  display: flex;
+  gap: 10px;
+}
+
+.signup-box input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.terms {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* .hero-image img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.hero-image {
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+    /* margin-top: -140px; */
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* image limit so it never exceeds viewport */
+  object-fit: contain;
+}
